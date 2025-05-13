@@ -33,6 +33,12 @@
                 width: 100%;
             }
         }
+        .fixed-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
@@ -44,10 +50,10 @@
 
 <table>
     <thead>
-    <tr>
-        <th class="col-en">English</th>
-        <th class="col-hy">Armenian</th>
-    </tr>
+<div class="fixed-buttons">
+    <button id="b1">Hide English</button>
+    <button id="b2">Hide Armenian</button>
+</div>
     </thead>
     <tbody>
     <tr><td class="col-en">describe</td><td class="col-hy">նկարագրել</td></tr>
